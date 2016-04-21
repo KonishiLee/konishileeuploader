@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>头像上传组件</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="avatar.css">
+	<style>
+		/*demo*/
+		.avatar-upload {
+			width: 200px;
+			height: 200px;
+		}
+		.avatar-upload img {
+			max-width: 200px;
+			max-height: 200px;
+		}
+
+		/*usage*/
+		body {
+			max-width: 800px;
+		}
+
+		.avatar-upload {
+			border-radius: 160px;
+			overflow: hidden;
+		}
+
+		#example {
+			background: #eee;
+			padding: 15px;
+			overflow: hidden;
+		}
+
+		#example .text {
+			float: left;
+			width: 50%;
+		}
+
+		#example .avatar-upload {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Avatar Uploader</h1>
+	<div id="example">
+		<div class="text">
+			<h2>Example</h2>
+			<p>Click the image to replace it.</p>
+		</div>
+		<div class="avatar-upload">
+			<img src="demo.jpg">
+		</div>
+	</div>
+	</div>
+
+	<script src="avatar.js"></script>
+	<script>
+		new window.AvatarUpload({
+			el: document.querySelector('.avatar-upload'),
+			uploadUrl: '',
+			uploadData: {
+				foo: 'bar',
+				bar: 'baz'
+			},
+			pretendUpload: true
+		})
+	</script>
+
+</body>
+</html>
