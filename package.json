@@ -1,0 +1,23 @@
+{
+  "name": "konishileeuploader",
+  "version": "1.0.3",
+  "description": "",
+  "main": "avatar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonishiLee/konishileeuploader.git"
+  },
+  "keywords": [
+    "avatar",
+    "uploader"
+  ],
+  "author": "konishilee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KonishiLee/konishileeuploader/issues"
+  },
+  "homepage": "https://github.com/KonishiLee/konishileeuploader#readme"
+}

@@ -10,6 +10,7 @@
 	} else {
 		// Browser globals
 		root.AvatarUpload = factory();
+		module.exports = root.AvatarUpload;
 	}
 }( this, function () {
 
@@ -52,7 +53,7 @@
 
 		uploadUrl: '',
 		uploadMethod: 'post',
-		uploadImageKey: 'upload',
+		uploadImageKey: 'kupload',
 		uploadData: {},
 
 		pretendUpload: false,
@@ -200,6 +201,7 @@
 			, 10));
 		});
 
+
 		xhr.onreadystatechange = function(e) {
 			if (xhr.readyState !== 4) return;
 
@@ -218,9 +220,9 @@
 		}
 
 		xhr.open(config.uploadMethod, config.uploadUrl);
+		xhr.setRequestHeader(config.headers.key, config.headers.value);
 		xhr.send(formData);
 	};
-
 	return AvatarUpload;
 
 }));
